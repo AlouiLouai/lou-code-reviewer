@@ -1,3 +1,6 @@
+import InputComponent from "./components/Input";
+import OutputComponent from "./components/Output";
+
 export default function Home() {
   return (
     <main className="bg-black text-blue-500 flex flex-col h-screen">
@@ -8,11 +11,11 @@ export default function Home() {
 
       <div className="flex-grow flex justify-between p-8">
         <div className="w-1/2 bg-black rounded-lg p-4 h-full border border-blue-500">
-          <p>Component 1</p>
+          <InputComponent />
         </div>
 
         <div className="w-1/2 bg-black rounded-lg p-4 h-full border border-blue-500 ml-4">
-          <p>Component 2</p>
+          <OutputComponent />
         </div>
       </div>
     </main>
